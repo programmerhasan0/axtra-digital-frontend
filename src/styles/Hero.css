@@ -1,0 +1,65 @@
+.hero-img {
+    text-align: right;
+}
+
+.hero-main {
+    background-image: url("/images/shapes/1.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.sec-sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #121212;
+    position: relative;
+    display: inline;
+    padding-right: 30px;
+    padding-bottom: 0;
+}
+
+.sec-sub-title::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 1px;
+    left: 100%;
+    top: 12px;
+    background-color: #121212;
+}
+
+.sec-title {
+    font-size: 306px;
+    font-weight: 600;
+    line-height: 0.82;
+    color: #121212;
+}
+@media only screen and (max-width: 767px) {
+    .sec-title {
+        font-size: 90px;
+    }
+    .hero-sec {
+        background: none;
+    }
+    .hero-img {
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1443px) {
+    .sec-title {
+        font-size: 130px;
+    }
+    .hero-img {
+        bottom: 0;
+    }
+}
+.title-right {
+    right: 0;
+}
+
+.hero-text {
+    max-width: 320px;
+    text-align: justify;
+    padding-top: 90px;
+}
