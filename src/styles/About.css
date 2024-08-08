@@ -51,13 +51,12 @@
     margin-left: 140px;
     background-color: #121212;
     transition: background-color 200ms;
-}
-.about-circle-btn a {
     color: white;
 }
 
 .about-circle-btn:hover {
     background-color: #fff;
+    color: #121212;
 }
 
 @media only screen and (max-width: 767px) {

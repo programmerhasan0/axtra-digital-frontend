@@ -24,8 +24,8 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <>
-            <section>
+        <section className="hero">
+            <section className="hero">
                 <div className="hero-main">
                     <div className="container">
                         <div className="row">
@@ -70,7 +70,7 @@ const Hero = () => {
                     alt=""
                 />
             </section>
-        </>
+        </section>
     );
 };
 
