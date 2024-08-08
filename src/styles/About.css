@@ -1,0 +1,89 @@
+.about-sec {
+    background-color: #121212;
+    color: #fff;
+    padding: 100px 0;
+    background-image: url("/images/shapes/about.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}
+
+.about-sec:after {
+    content: "";
+    width: 1px;
+    background-color: grey;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 56%;
+}
+.about-sec-title {
+    z-index: 10;
+    position: relative;
+    background: #121212;
+}
+
+.about-sec-sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 45px 0 15px 0;
+    z-index: 9;
+    background-color: #121212;
+    position: relative;
+    margin-bottom: auto;
+}
+
+.about-sec-title h2 {
+    font-size: 60px;
+    line-height: 1;
+}
+.about-sec-text {
+    padding-left: 140px;
+}
+
+.about-sec-text {
+    color: #999;
+    text-align: justify;
+}
+
+.about-circle-btn {
+    margin-left: 140px;
+    background-color: #121212;
+    transition: background-color 200ms;
+}
+.about-circle-btn a {
+    color: white;
+}
+
+.about-circle-btn:hover {
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-sec-title h2 {
+        font-size: 32px;
+    }
+    .about-sec-text {
+        padding-left: 0;
+    }
+    .about-sec::after {
+        content: none;
+    }
+
+    .about-circle-btn {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-sec-title h2 {
+        font-size: 36px;
+    }
+}
+
+.about-sec::after {
+}
+.about-text-section {
+    border-left: 1px solid gray;
+}

@@ -1,5 +1,6 @@
 import useScrollPosition from "@hooks/useScrollPosition";
 import NavItem from "@components/NavItem.jsx";
+import { useRef } from "react";
 
 const Navbar = () => {
     const scrollPosition = useScrollPosition();
@@ -23,13 +24,14 @@ const Navbar = () => {
                 <img src="/images/logo-black.webp" alt="Logo Black" />
             </a>
             <button
-                class="navbar-toggler m-2"
+                className="navbar-toggler m-2"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                style={{ border: "none" }}
             >
                 <img src="/images/hamburgerIcon.webp" alt="Hamburger Icon" />
             </button>

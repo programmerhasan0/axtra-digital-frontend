@@ -1,0 +1,14 @@
+.circle-wrapper {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.circle-btn-global {
+    text-decoration: none;
+}

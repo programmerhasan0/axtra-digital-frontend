@@ -2,6 +2,7 @@
 
 body {
     font-family: "Kanit", sans-serif;
+    cursor: url("/about.webp");
 }
 .navbar {
     z-index: 50;

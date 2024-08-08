@@ -41,17 +41,11 @@
     .hero-sec {
         background: none;
     }
-    .hero-img {
-        bottom: 0;
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1443px) {
     .sec-title {
         font-size: 130px;
-    }
-    .hero-img {
-        bottom: 0;
     }
 }
 .title-right {

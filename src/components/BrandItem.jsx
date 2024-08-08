@@ -1,6 +1,6 @@
 const BrandItem = ({ url, index }) => {
     return (
-        <div>
+        <div className="brand-item" id={`brand${index}`}>
             <img src={url} alt={`Brand Image ${index}`} />
         </div>
     );
