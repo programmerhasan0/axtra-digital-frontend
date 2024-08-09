@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import "animate.css";
+import "swiper/css";
+
 import AOS from "aos";
 
 AOS.init();

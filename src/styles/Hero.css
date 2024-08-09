@@ -48,6 +48,11 @@
         font-size: 130px;
     }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .sec-title {
+        font-size: 260px;
+    }
+}
 .title-right {
     right: 0;
 }

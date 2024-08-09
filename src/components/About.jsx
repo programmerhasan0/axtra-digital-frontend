@@ -35,15 +35,14 @@ const About = () => {
                                     believe that progress only happens when you
                                     refused to play things safe. We combine
                                     ideas and behaviors, and insights with
-                                    design, technological data to produce brand
+                                    design, technologi`cal data to produce brand
                                     experiences that customers love our
                                     services.
                                 </p>
                                 <CircleBtn
                                     elementClass="about-circle-btn"
                                     text="Explore us"
-                                    fontColor="#121212"
-                                    rColor="#fff"
+                                    url="#"
                                 />
                             </div>
                         </div>
