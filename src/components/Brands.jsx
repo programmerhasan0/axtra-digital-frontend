@@ -22,7 +22,10 @@ const Brands = () => {
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             const t1 = gsap.timeline({
-                scrollTrigger: { trigger: ["#brand-h2", ".brand-item"] },
+                scrollTrigger: {
+                    trigger: ["#brand-h2", ".brand-item"],
+                    toggleActions: "play none none",
+                },
             });
 
             t1.from(["#brand-h2", ".brand-item"], {
@@ -40,10 +43,7 @@ const Brands = () => {
             <h2 className="text-uppercase text-center" id="brand-h2">
                 we worked with global largest brands
             </h2>
-            <div
-                className="brandImages row row-cols-2 row-cols-lg-6 row-cols-md-3 text-center"
-                data-aos="fade-up"
-            >
+            <div className="brandImages row row-cols-2 row-cols-lg-6 row-cols-md-3 text-center">
                 {imagesUrl.map((url, index) => (
                     <BrandItem url={url} key={index} index={index} />
                 ))}

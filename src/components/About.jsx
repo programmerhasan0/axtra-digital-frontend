@@ -8,20 +8,14 @@ const About = () => {
             <section className="about-sec text-white">
                 <div className="container">
                     <div className="row">
-                        <div
-                            className="col-xxl-6 col-xl-6 col-lg-6 col-md-6"
-                            data-aos="fade-right"
-                        >
+                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                             <img
                                 src="/images/about.webp"
                                 alt="About Image"
                                 className="img-fluid"
                             />
                         </div>
-                        <div
-                            className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 about-description"
-                            data-aos="fade-left"
-                        >
+                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 about-description">
                             <h2 className="about-sec-sub-title text-uppercase">
                                 who we are
                             </h2>
