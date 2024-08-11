@@ -1,32 +1,15 @@
 import ServicesSingle from "@components/ServicesSingle";
+import { useEffect, useState } from "react";
 
 const ServicesList = () => {
-    const servicesData = [
-        {
-            title: "search engine optimization",
-            text: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-            services: ["Logo Design", "Advertisement", "promotion"],
-            url: "/services/search-engine-optimization",
-        },
-        {
-            title: "email marketing",
-            text: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-            services: ["Logo Design", "Advertisement", "promotion"],
-            url: "/services/email-marketing",
-        },
-        {
-            title: "content marketing",
-            text: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-            services: ["Logo Design", "Advertisement", "promotion"],
-            url: "/services/content-marketing",
-        },
-        {
-            title: "social marketing",
-            text: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-            services: ["Logo Design", "Advertisement", "promotion"],
-            url: "/services/social-marketing",
-        },
-    ];
+    const [servicesData, setServicesData] = useState([]);
+
+    useEffect(() => {
+        fetch(`${import.meta.env.VITE_BACKEND_URL}/services/all`)
+            .then((res) => res.json())
+            .then((data) => setServicesData(data));
+    }, []);
+
     return (
         <div className="services-list container">
             <div className="services-list-wrapper">

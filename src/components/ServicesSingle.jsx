@@ -8,7 +8,7 @@ const ServicesSingle = ({ title, text, services, url }) => {
             <div className="services-list-single-content">
                 <p>{text}</p>
                 <ul>
-                    {services.map((serviceName, index) => (
+                    {JSON.parse(services).map((serviceName, index) => (
                         <li key={index} className="text-capitalize">
                             {serviceName}
                         </li>
