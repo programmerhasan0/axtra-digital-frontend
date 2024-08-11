@@ -1,8 +1,11 @@
-.featured-slider-content-wrapper {
+featured-slider-content-wrapper {
     position: relative;
+    display: flex;
 }
 
 .featured-slider-title {
+    z-index: 50;
+    flex: 1 1 0%;
     font-size: 180px;
 }
 
@@ -10,36 +13,74 @@
     position: relative;
     left: 200px;
 }
+.featured-slider-content-wrapper img {
+    flex: 1 1 0%;
+    /* width: 100%; */
+    position: absolute;
+    right: 10%;
+}
 
 @media only screen and (max-width: 767px) {
+    .featured-slider-content-wrapper {
+        height: 100vh;
+    }
     .featured-slider-title {
         font-size: 60px;
+        padding-left: 30px;
         position: absolute;
+        top: 80px;
     }
     .featured-slider-title div:nth-child(2) {
         left: 60px;
     }
     .featured-slider-content-wrapper img {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-left: 20px;
+        /* flex: 1 1 0%; */
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .featured-slider-content-wrapper {
+        height: 100vh;
+    }
     .featured-slider-title {
+        font-size: 80px;
+        position: absolute;
+    }
+    .featured-slider-title div:nth-child(2) {
+        left: 80px;
+    }
+    .featured-slider-content-wrapper img {
+        width: 60%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-left: 20px;
+        flex: 1 1 0%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .featured-slider-content-wrapper {
+        height: 100vh;
+    }
+    .featured-slider-title {
+        width: 40%;
+        flex: 1 1 0%;
         font-size: 100px;
         position: absolute;
     }
     .featured-slider-title div:nth-child(2) {
         left: 100px;
     }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .featured-slider-title {
-        font-size: 120px;
-        position: absolute;
-    }
-    .featured-slider-title div:nth-child(2) {
-        left: 120px;
+    .featured-slider-content-wrapper img {
+        width: 60%;
+        height: 100vh;
+        margin: 0 auto;
+        padding-left: 20px;
+        flex: 1 1 0%;
     }
 }
 
