@@ -7,6 +7,8 @@ import FeaturedWork from "@components/FeaturedWork";
 import Testimonial from "@components/Testimonial";
 import WhyChooseUs from "@components/WhyChooseUs";
 import Pricing from "@components/Pricing";
+import Journal from "@components/Journal";
+import Footer from "@components/Footer";
 
 const Home = () => {
     return (
@@ -20,6 +22,8 @@ const Home = () => {
             <Testimonial />
             <WhyChooseUs />
             <Pricing />
+            <Journal />
+            <Footer />
         </>
     );
 };

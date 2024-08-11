@@ -1,0 +1,151 @@
+.journal {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.journal::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 1px;
+    background-color: #efefef;
+    top: 0;
+    left: 39%;
+}
+
+.journal-wrapper {
+    position: relative;
+    padding-left: 330px;
+    padding-top: 130px;
+    line-height: 1;
+    background-color: #fff;
+}
+
+.journal-sub-wrapper {
+    background-color: #fff;
+    z-index: 20;
+    position: relative;
+}
+
+.journal-sub-title {
+    font-weight: 400;
+    font-size: 18px;
+    color: #555;
+}
+.journal-title {
+    font-size: 60px;
+}
+
+.journal-text {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    max-width: 410px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-left: 220px;
+    color: #555;
+    text-align: justify;
+}
+
+.journal-list {
+    padding-bottom: 140px;
+}
+
+.journal-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.journal-card {
+    margin-bottom: 20px;
+}
+
+.journal-content {
+    position: absolute;
+    bottom: -1px;
+    width: 63%;
+    right: 0;
+    margin-left: -50px;
+    background: #fff;
+    padding: 40px;
+}
+
+.journal-meta {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.journal-meta a {
+    color: #555;
+    transition: all 300ms;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.journal-img-wrapper a {
+    text-decoration: none;
+    transition: all 300ms;
+}
+.journal-article-title {
+    padding-bottom: 50px;
+    display: block;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #121212;
+    border-bottom: 1px solid #bbb;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+.journal-article-title:hover {
+    color: #555;
+}
+
+.journal-btn {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #555;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.journal-btn svg {
+    rotate: 315deg;
+}
+
+@media only screen and (max-width: 767px) {
+    .journal::after {
+        display: none;
+    }
+    .journal-text {
+        margin-left: 0;
+    }
+    .journal-title {
+        font-size: 32px;
+    }
+    .journal-wrapper {
+        padding-left: 0;
+    }
+    .journal-list-wrapper {
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .journal-title {
+        font-size: 36px;
+    }
+    .journal-wrapper {
+        padding-left: 100px;
+    }
+    .journal-list-wrapper {
+        padding-bottom: 80px;
+    }
+}

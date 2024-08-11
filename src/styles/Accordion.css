@@ -1,0 +1,17 @@
+.accordion-item {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #121212 !important;
+}
+
+.accordion-item:focus {
+}
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.accordion-item:first-child {
+    border-top: 1px solid #121212 !important;
+}

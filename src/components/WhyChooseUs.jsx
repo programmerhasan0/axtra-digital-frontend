@@ -16,6 +16,7 @@ const WhyChooseUs = () => {
                     pin: true,
                     scrub: 3,
                 },
+                markers: true,
             });
 
             timeline.to(".choosing-content", {
@@ -32,7 +33,7 @@ const WhyChooseUs = () => {
             <div className="whyChooseUs-title choosing-content">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xxl-12">
+                        <div className="col-xxl-12 col-xl-6 col-lg-6 col-md-6">
                             <div className="choose-title-wrapper">
                                 <div className="choose-title text-uppercase text-center">
                                     <div>why</div>

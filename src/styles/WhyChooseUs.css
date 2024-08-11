@@ -1,9 +1,9 @@
 .whyChooseUs {
-    padding-top: 60px;
     display: grid;
     overflow: hidden;
     background-color: #fffaf0;
     grid-auto-columns: 100vw;
+    height: 100vh;
     grid-auto-flow: column;
 }
 
@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: ligh;
 }
 .whyChooseUs > .choosing-content {
 }
@@ -185,16 +186,13 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .whyChooseUs-skills-title h2 {
-        font-size: 32px;
-    }
-    .whyChooseUs-skills-text {
-        padding-left: 0;
+    .offer-title {
+        font-size: 30px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .whyChooseUs-skills-title h2 {
-        font-size: 36px;
+    .offer-title {
+        font-size: 30px;
     }
 }
